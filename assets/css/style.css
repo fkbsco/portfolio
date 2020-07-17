@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*IFRAME*/
+iframe {
+	height: 100vh;
+	width: 100vw;
+	border:0;
+}
+
+/*NAVIGATION BAR*/
+#navi {
+	position: sticky;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 99999;
+	top: 0;
+}
+
+#sitelogo img{
+	width:120px;
+	height: 120px;
+	margin-left: 20px;
+}
+
+#navlinks {
+	margin: 40px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#navlinks a {
+	margin: 30px;
+	text-decoration: none;
+	color: #5a5a5a;
+}
+
+#navlinks a:hover {
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/bacon.svg");
+	background-position: 0em 1.06em;
+	background-repeat: repeat-x;
+	background-size: 28px 7px;
+	color: #5a2a27;
+}
+
+.selected {
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/bacon.svg");
+	background-position: 0em 1.06em;
+	background-repeat: repeat-x;
+	background-size: 28px 7px;
+	color: #5a2a27;
+}
+
+/*ABOUT BODY*/
+.abheads {
+	font-family: 'Playfair Display', serif;
+	font-size: 30px;
+}
+
+.container i {
+	font-size: 40px;
+	margin: 10px;
+}
+
+.container {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
+#name {
+	font-size: 20px;
+}
+
+body {
+	
+	background-color: #fff7f8;
+	color: #5a5a5a;
+}
+
+#bodyabout {
+	background-color: #d6876f;
+	height: 100vh;
+	width: 20vw;
+}
+
+/*FOOTER*/
+footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+footer p {
+	font-size: 12px;
+}
+
+footer i {
+	color: #8d5b4c;
+	font-size: 20px;
+	margin: 0 15px;
+}
+
+footer i:hover {
+	color: #5a2a27;
+}
