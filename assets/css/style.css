@@ -4,13 +4,6 @@
 	box-sizing: border-box;
 }
 
-/*IFRAME*/
-iframe {
-	height: 100vh;
-	width: 100vw;
-	border:0;
-}
-
 /*NAVIGATION BAR*/
 #navi {
 	position: sticky;
@@ -55,6 +48,12 @@ iframe {
 	color: #5a2a27;
 }
 
+/*BODY*/
+body {
+	background-color: #fff7f8;
+	color: #5a5a5a;
+}
+
 /*ABOUT BODY*/
 .abheads {
 	font-family: 'Playfair Display', serif;
@@ -75,16 +74,12 @@ iframe {
 	font-size: 20px;
 }
 
-body {
-	
-	background-color: #fff7f8;
-	color: #5a5a5a;
-}
-
-#bodyabout {
-	background-color: #d6876f;
-	height: 100vh;
-	width: 20vw;
+/*INDEX BODY*/
+#indexbody {
+	background: url(../../images/landing.png); 
+	background-size: cover; 
+	background-position: center center; 
+	background-attachment: fixed;
 }
 
 /*FOOTER*/
@@ -108,4 +103,14 @@ footer i {
 
 footer i:hover {
 	color: #5a2a27;
+}
+
+/*MEDIA ONLY*/
+@media only screen and (max-width: 768px) {
+  #indexbody {
+	background: url(../../images/mobilelanding.png);
+	background-size: cover; 
+	background-position: center center; 
+	background-attachment: fixed;
+	}
 }
