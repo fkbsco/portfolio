@@ -273,13 +273,6 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
         display: none;
     }
 
-    #indexbody {
-        background: url('../../images/mobilelanding.png');
-        background-size: cover; 
-        background-position: center center; 
-        background-attachment: fixed;
-    }
-
     #openbtn {
         font-size: 45px;
         margin-right: 40px;
