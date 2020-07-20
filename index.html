@@ -27,54 +27,56 @@
 
 </head>
 
-<body id="indexbody">
+<body>
 
-	<!-- NAVIGATION -->
-	<div id="navi">
-		<div id="sitelogo">
-			<a href="./index.html"><img src="images/logoblack.png"></a>
-		</div>
-		<div id="navlinks">
-			<a href="./about.html">About</a>
-			<a href="./projects.html">Projects</a>
-			<a href="./contact.html">Contact</a>
-		</div>
-
-		<!-- MOBILE NAVIGATION -->
-		<div id="myNav" class="overlay">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <div class="overlay-content">
-			  	<ul>
-			    	<li><a href="./about.html">ABOUT</a></li>
-	   				<li><a href="./projects.html">PROJECTS</a></li>
-	    			<li><a href="./contact.html">CONTACT</a></li>
-	    		</ul>
-			  </div>
+	<div id="wrapper">
+		<!-- NAVIGATION -->
+		<div id="navi">
+			<div id="sitelogo">
+				<a href="./index.html"><img src="images/logoblack.png"></a>
+			</div>
+			<div id="navlinks">
+				<a href="./about.html">About</a>
+				<a href="./projects.html">Projects</a>
+				<a href="./contact.html">Contact</a>
 			</div>
 
-			<span id="openbtn" onclick="openNav()">&#9776;</span>
+			<!-- MOBILE NAVIGATION -->
+			<div id="myNav" class="overlay">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <div class="overlay-content">
+				  	<ul>
+				    	<li><a href="./about.html">ABOUT</a></li>
+		   				<li><a href="./projects.html">PROJECTS</a></li>
+		    			<li><a href="./contact.html">CONTACT</a></li>
+		    		</ul>
+				  </div>
+				</div>
 
-			<script>
-				function openNav() {
-					document.getElementById("myNav").style.height = "100%";
-				}
-				
-				function closeNav() {
-					document.getElementById("myNav").style.height = "0%";
-				}
-			</script>
-	</div>
+				<span id="openbtn" onclick="openNav()">&#9776;</span>
 
-	<!-- FOOTER -->
-	<footer class="onepagefooter">
-	<div class="container-fluid">
-		<a href="https://www.linkedin.com/in/francheskakae/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-		<a href="https://www.instagram.com/francheskakae/" target="_blank"><i class="fab fa-instagram"></i></a>
-		<a href="https://twitter.com/kaesadillas" target="_blank"><i class="fab fa-twitter"></i></a>
-		<a href="https://www.facebook.com/francheskakae" target="_blank"><i class="fab fa-facebook"></i></a>
-		<p>© 2020 Francheska Kae</p>
+				<script>
+					function openNav() {
+						document.getElementById("myNav").style.height = "100%";
+					}
+					
+					function closeNav() {
+						document.getElementById("myNav").style.height = "0%";
+					}
+				</script>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="onepagefooter">
+		<div class="container-fluid">
+			<a href="https://www.linkedin.com/in/francheskakae/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://www.instagram.com/francheskakae/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://twitter.com/kaesadillas" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.facebook.com/francheskakae" target="_blank"><i class="fab fa-facebook"></i></a>
+			<p>© 2020 Francheska Kae</p>
+		</div>
+		</footer>
 	</div>
-	</footer>
 
 	<!-- BOOTSTRAP JAVA -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

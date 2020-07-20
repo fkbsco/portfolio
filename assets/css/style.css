@@ -104,11 +104,12 @@
 
 
 /*BODY*/
-body {
+html, body {
 	background-color: #fff7f8;
 	color: #5a5a5a;
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
+	height: 100%;
 }
 
 .pageheads {
@@ -155,12 +156,12 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
 }
 
 /*INDEX PAGE*/
-#indexbody {
+#wrapper {
+	height: 100%;
 	background: url(../../images/landing.png); 
 	background-size: cover; 
 	background-position: center center; 
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 }
 
 /*ABOUT PAGE*/
@@ -247,28 +248,14 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
 	color: #5a2a27;
 }
 
-/*PROJECT PAGE*/
-#projecttitle {
-	font-family: 'Playfair Display', serif;
-	font-size: 45px;
-	font-style: bold;
-	text-align: center;
-}
-
-#projectp {
-	font-size: 15px;
-	font-style: italic;
-	text-align: center;
-}
 
 /*MEDIA ONLY*/
 @media only screen and (max-width: 1024px) {
-	#indexbody {
+	#wrapper {
         background: url('../../images/mobilelanding.png');
         background-size: cover; 
         background-position: center center; 
         background-attachment: fixed;
-        background-repeat: no-repeat;
     }
 
 	#sitelogo img{
