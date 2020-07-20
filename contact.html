@@ -22,6 +22,8 @@
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/png" href="images/logoblack.png">
 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 <body>
 
@@ -31,23 +33,85 @@
 			<a href="./index.html"><img src="images/logoblack.png"></a>
 		</div>
 		<div id="navlinks">
-			<a href="./aboutme.html">About</a>
+			<a href="./about.html">About</a>
 			<a href="./projects.html">Projects</a>
-			<a class="selected" href="./contact.html">Contact</a>
+			<a href="./contact.html" class="selected">Contact</a>
 		</div>
+
+		<!-- MOBILE NAVIGATION -->
+		<div id="myNav" class="overlay">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div class="overlay-content">
+			  	<ul>
+			    	<li><a href="./about.html">ABOUT</a></li>
+	   				<li><a href="./projects.html">PROJECTS</a></li>
+	    			<li><a href="./contact.html">CONTACT</a></li>
+	    		</ul>
+			  </div>
+			</div>
+
+			<span id="openbtn" onclick="openNav()">&#9776;</span>
+
+			<script>
+				function openNav() {
+					document.getElementById("myNav").style.height = "100%";
+				}
+				
+				function closeNav() {
+					document.getElementById("myNav").style.height = "0%";
+				}
+			</script>
 	</div>
 
+	<!-- HEADING/TITLE -->
+	<div id="contacttitle">
+		Contact
+	</div>
+
+	<p id="contactp">
+		For general enquiries, projects, or if you simply would like to drop by and say hi.
+	</p>
+		
 	<!-- CONTACT FORM -->
 	<div class="container">
 			<div class="row">
-				<div class="col col-lg-6 col-md-6 col-sm-12 border border-primary">
-					Email
+				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12" style="padding:20px;">
+					<form>
+						<div class="contactform">
+							<input type="text" class="formcss" id="nameform" placeholder="Full Name">
+						</div>
+
+						<div class="contactform">
+					    	<input type="email" class="formcss" id="emailadd" placeholder="Email">
+						</div>
+
+						<div class="contactform">
+					    	<input type="text" class="formcss" id="subjectform" placeholder="Subject">
+						</div>
+
+						<div class="contactform">
+					    	<textarea class="formcss" id="messageform" placeholder="Message"></textarea>
+						</div>
+
+					  <button type="submit" class="formbtn">Submit</button>
+					</form>
 				</div>	
+
+				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style="padding:40px;">
+					<div class="contactheads">EMAIL</div>
+					<p id="emailcontact">francheskadlcrz@gmail.com</p><br>
+
+					<div class="contactheads">SOCIALS</div>
+					<p><a href="https://www.linkedin.com/in/francheskakae/" target="_blank" class="contactlinks">LINKEDIN</a></p>
+					<p><a href="https://www.instagram.com/francheskakae/" target="_blank" class="contactlinks">INSTAGRAM</a></p>
+					<p><a href="https://twitter.com/kaesadillas" target="_blank" class="contactlinks">TWITTER</a></p>
+					<p><a href="https://www.facebook.com/francheskakae" target="_blank" class="contactlinks">FACEBOOK</a></p>
+				</div>
 			</div>
 	</div>
 
 	<!-- FOOTER -->
-	<footer>
+	<footer id="contactfooter">
 	<div class="container-fluid">
 		<a href="https://www.linkedin.com/in/francheskakae/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 		<a href="https://www.instagram.com/francheskakae/" target="_blank"><i class="fab fa-instagram"></i></a>

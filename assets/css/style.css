@@ -4,10 +4,11 @@
 	box-sizing: border-box;
 }
 
+/*GENERAL*/
 /*NAVIGATION BAR*/
 #navi {
 	position: sticky;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	z-index: 99999;
@@ -48,13 +49,120 @@
 	color: #5a2a27;
 }
 
+/*NAV FOR MOBILE*/
+#openbtn {
+	display: none;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: #edd3c4;
+  opacity: 0.88;
+  overflow-y: hidden;
+  transition: 0.6s;
+  display: none;
+}
+
+.overlay-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: inherit;
+}
+
+.overlay-content ul {
+	text-align: center;
+	width: 100%;
+}
+
+.overlay a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #5a5a5a;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #5a2a27;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
 /*BODY*/
 body {
 	background-color: #fff7f8;
 	color: #5a5a5a;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
 }
 
-/*ABOUT BODY*/
+.pageheads {
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pageheadsmobile {
+	display: none;
+}
+
+/*FOOTER*/
+footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+footer p, .onepagefooter p, #contactfooter p {
+	font-size: 12px;
+}
+
+footer i, .onepagefooter i, #contactfooter i {
+	color: #8d5b4c;
+	font-size: 20px;
+	margin: 0 15px;
+}
+
+footer i:hover, .onepagefooter:hover, #contactfooter:hover {
+	color: #5a2a27;
+}
+
+.onepagefooter, #contactfooter {
+	bottom: 0; 
+	left: 0; 
+	position: fixed;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+}
+
+/*INDEX PAGE*/
+#indexbody {
+	background: url(../../images/landing.png); 
+	background-size: cover; 
+	background-position: center center; 
+	background-attachment: fixed;
+}
+
+/*ABOUT PAGE*/
 .abheads {
 	font-family: 'Playfair Display', serif;
 	font-size: 30px;
@@ -74,43 +182,136 @@ body {
 	font-size: 20px;
 }
 
-/*INDEX BODY*/
-#indexbody {
-	background: url(../../images/landing.png); 
-	background-size: cover; 
-	background-position: center center; 
-	background-attachment: fixed;
-}
-
-/*FOOTER*/
-footer {
-	left: 0;
-	bottom: 0;
-	width: 100%;
+/*CONTACT PAGE*/
+#contacttitle {
+	font-family: 'Playfair Display', serif;
+	font-size: 45px;
+	font-style: bold;
 	text-align: center;
-	padding: 20px;
 }
 
-footer p {
-	font-size: 12px;
+#contactp {
+	font-size: 15px;
+	font-style: italic;
+	text-align: center;
 }
 
-footer i {
-	color: #8d5b4c;
+.formcss {
+	width: 100%;
+	padding: 10px 20px;
+	margin: 8px 0;
+	border: none;
+	border-bottom: 1px dotted #5c4742;
+	background: transparent;
+	font-size: 15px;
+}
+
+.formbtn {
+	border-color: #5a2a27;
+	border: 1px solid;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 15px;
+	background-color: transparent;
+	color: #5a5a5a;
+}
+
+.formbtn:hover {
+	background-color: #f7edd2;
+}
+
+.contactheads {
+	font-family: 'Playfair Display', serif;
 	font-size: 20px;
-	margin: 0 15px;
+	font-style: bold;
+	margin-left: 5px;
+	margin-bottom: 10px;
 }
 
-footer i:hover {
+#emailcontact {
+	font-size: 15px;
+	font-style: italic;
+	text-decoration: underline;
+	margin-left:5px;
+	margin-bottom: 10px;
+}
+
+.contactlinks {
+	margin-left:5px;
+	text-decoration: none;
+	color: #5a5a5a;
+}
+
+.contactlinks:hover {
 	color: #5a2a27;
 }
 
+
 /*MEDIA ONLY*/
-@media only screen and (max-width: 768px) {
-  #indexbody {
-	background: url(../../images/mobilelanding.png);
-	background-size: cover; 
-	background-position: center center; 
-	background-attachment: fixed;
+@media only screen and (max-width: 1024px) {
+	#indexbody {
+        background: url('../../images/mobilelanding.png');
+        background-size: cover; 
+        background-position: center center; 
+        background-attachment: fixed;
+    }
+
+	#sitelogo img{
+		margin-left: 15px;
 	}
+
+	#contactfooter {
+		position: static;
+	}
+
+	.abheads {
+	font-family: 'Playfair Display', serif;
+	font-size: 25px;
+	}
+
+	#navlinks {
+        display: none;
+    }
+
+    #indexbody {
+        background: url('../../images/mobilelanding.png');
+        background-size: cover; 
+        background-position: center center; 
+        background-attachment: fixed;
+    }
+
+    #openbtn {
+        font-size: 45px;
+        margin-right: 40px;
+        margin-top: 28px;
+        color: #5a5a5a;
+        display: block;
+    }
+
+    .overlay {
+        display: inline-block;
+        overflow-y: auto;
+    }
+
+    .overlay a {
+    	font-family: 'Playfair Display', serif;
+        font-size: 60px;
+    }
+
+    .overlay .closebtn {
+        font-size: 60px;
+        top: 0px;
+        right: 30px;
+    }
+
+    .pageheads {
+    	display: none;
+    }
+
+    .pageheadsmobile {
+    	width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+    }
 }
