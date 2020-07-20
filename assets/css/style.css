@@ -246,6 +246,19 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
 	color: #5a2a27;
 }
 
+/*PROJECT PAGE*/
+#projecttitle {
+	font-family: 'Playfair Display', serif;
+	font-size: 45px;
+	font-style: bold;
+	text-align: center;
+}
+
+#projectp {
+	font-size: 15px;
+	font-style: italic;
+	text-align: center;
+}
 
 /*MEDIA ONLY*/
 @media only screen and (max-width: 1024px) {
