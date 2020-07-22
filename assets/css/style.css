@@ -23,7 +23,7 @@
 
 #navlinks {
 	margin: 40px;
-	font-size: 20px;
+	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -35,7 +35,7 @@
 
 #navlinks a:hover {
 	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/bacon.svg");
-	background-position: 0em 1.06em;
+	background-position: 0em 1.1em;
 	background-repeat: repeat-x;
 	background-size: 28px 7px;
 	color: #5a2a27;
@@ -43,7 +43,7 @@
 
 .selected {
 	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/bacon.svg");
-	background-position: 0em 1.06em;
+	background-position: 0em 1.1em;
 	background-repeat: repeat-x;
 	background-size: 28px 7px;
 	color: #5a2a27;
@@ -167,33 +167,32 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
 /*ABOUT PAGE*/
 .abheads {
 	font-family: 'Playfair Display', serif;
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .container i {
-	font-size: 40px;
+	font-size: 50px;
 	margin: 10px;
 }
 
 .container {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 #name {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 /*CONTACT PAGE*/
 #contacttitle {
 	font-family: 'Playfair Display', serif;
 	font-size: 45px;
-	font-style: bold;
 	text-align: center;
 }
 
 #contactp {
-	font-size: 15px;
+	font-size: 18px;
 	font-style: italic;
 	text-align: center;
 }
@@ -205,7 +204,7 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
 	border: none;
 	border-bottom: 1px dotted #5c4742;
 	background: transparent;
-	font-size: 15px;
+	font-size: 17px;
 }
 
 .formbtn {
@@ -224,14 +223,13 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
 
 .contactheads {
 	font-family: 'Playfair Display', serif;
-	font-size: 20px;
-	font-style: bold;
+	font-size: 23px;
 	margin-left: 5px;
 	margin-bottom: 10px;
 }
 
 #emailcontact {
-	font-size: 15px;
+	font-size: 17px;
 	font-style: italic;
 	text-decoration: underline;
 	margin-left:5px;
@@ -242,26 +240,29 @@ footer i:hover, .onepagefooter:hover, #contactfooter:hover {
 	margin-left:5px;
 	text-decoration: none;
 	color: #5a5a5a;
+	font-size: 17px;
 }
 
 .contactlinks:hover {
 	color: #5a2a27;
 }
 
-/*CONTACT PAGE*/
+textarea {
+	resize: none;
+}
+
+/*PROJECT PAGE*/
 #projecttitle {
 	font-family: 'Playfair Display', serif;
 	font-size: 45px;
-	font-style: bold;
 	text-align: center;
 }
 
 #projectp {
-	font-size: 15px;
+	font-size: 18px;
 	font-style: italic;
 	text-align: center;
 }
-
 
 /*MEDIA ONLY*/
 @media only screen and (max-width: 1024px) {
