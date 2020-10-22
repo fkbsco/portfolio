@@ -258,9 +258,31 @@ textarea {
 	text-align: center;
 }
 
-#projectp {
-	font-size: 18px;
-	font-style: italic;
+.projtitles {
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+}
+
+.projsubtitles, .projdesc {
+	font-size: 15px;
+}
+
+.projimg img{
+	width: 100%;
+	border: 3px solid #edd3c4;
+	border-radius: 25px;
+	padding: 15px;
+	opacity: 0.9;
+	
+}
+
+.projimg img:hover {
+	transition: ease-in-out .5s;
+	opacity: 1;
+}
+
+.sidenote {
+	font-size: 12px;
 	text-align: center;
 }
 
@@ -282,8 +304,8 @@ textarea {
 	}
 
 	.abheads {
-	font-family: 'Playfair Display', serif;
-	font-size: 25px;
+		font-family: 'Playfair Display', serif;
+		font-size: 25px;
 	}
 
 	#navlinks {
